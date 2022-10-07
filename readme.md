@@ -26,7 +26,7 @@ I got this assignment from iNeuron Bootcamp.
 
 ## Links
 
-[Live](https://javascriptmyloancalculator.netlify.app/)
+[Live](https://javascriptmymusicplayer.netlify.app/)
 
 [Linkedin](https://www.linkedin.com/in/pratyush-kesarwani-2b6601171/)
 
