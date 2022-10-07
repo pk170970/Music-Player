@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e74b473dc.js" crossorigin="anonymous" rel="stylesheet"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav-bar">
+            <img class="logo" src="./assets/spotify app.jpg" alt="">
+            <ul>
+                <li>Glorify</li>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </div>
+
+        <div class="song-container">
+            <h1>Best of Arijit Singh Songs</h1>
+
+                <div class="song-lists">
+
+                    <div class="song-list">
+                        <div class="song-logo">
+                            <img class="song-cover" src="./songPoster/1.jpg" alt="">
+                        </div>
+                        <p class="songName">Shyayad(Remix)</p>
+                        <div class="time-stamp">
+                            <p class="time">04:05</p>
+                            <i class="fa-solid fa-play playSong"></i>
+                        </div>
+                    </div>
+
+                    <div class="song-list">
+                        <div class="song-logo">
+                            <img class="song-cover" src="./songPoster/2.jpg" alt="">
+                        </div>
+                        <p class="songName">Shyayad(Remix)</p>
+                        <div class="time-stamp">
+                            <p class="time">02:45</p>
+                            <i class=" fa fa-solid fa-play playSong"></i>
+                            
+                        </div>
+                    </div>
+                    <div class="song-list">
+                        <div class="song-logo">
+                            <img class="song-cover" src="./songPoster/3.jpg" alt="">
+                        </div>
+                        <p class="songName">Shyayad(Remix)</p>
+                        <div class="time-stamp">
+                            <p class="time">04:04</p>
+                            <i class="fa-solid fa-play playSong"></i>
+                            
+                        </div>
+                    </div>
+                    <div class="song-list">
+                        <div class="song-logo">
+                            <img class="song-cover" src="./songPoster/2.jpg" alt="">
+                        </div>
+                        <p class="songName">Shyayad(Remix)</p>
+                        <div class="time-stamp">
+                            <p class="time">04:58</p>
+                            <i class="fa-solid fa-play playSong"></i>
+                            
+                        </div>
+                    </div>
+                    <div class="song-list">
+                        <div class="song-logo">
+                            <img class="song-cover" src="./songPoster/2.jpg" alt="">
+                        </div>
+                        <p class="songName">Shyayad(Remix)</p>
+                        <div class="time-stamp">
+                            <p class="time">04:58</p>
+                            <i class="fa-solid fa-play playSong"></i>
+                            
+                        </div>
+                    </div>
+                    <div class="song-list">
+                        <div class="song-logo">
+                            <img class="song-cover" src="./songPoster/2.jpg" alt="">
+                        </div>
+                        <p class="songName">Shyayad(Remix)</p>
+                        <div class="time-stamp">
+                            <p class="time">05:12</p>
+                            <i class="fa-solid fa-play playSong"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="playback">
+            <input type="range" class="range progressBar" min="0" value="0" max="100">
+            <div class="playback-features">
+                <div class="song-name">
+                    <img class="equalizer" src="https://webdeasy.de/wp-content/uploads/2019/07/equalizer.gif" alt="" class="gif">
+                    <p class="songStatus">Shyayad(Remix)</p>
+                </div>
+                <div class="playback-control">
+                    <i class="fa-solid fa-backward previous"></i>
+                    <i class="fa-solid fa-play " id="masterPlay"></i>
+                    <i class="fa-solid fa-forward next"></i>
+                </div>
+                <p class="time masterTime">05:12</p>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

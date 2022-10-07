@@ -1,0 +1,244 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 100cw;
+    background-color: #FFE4C4;
+    height: 100vh;
+    overflow: hidden;
+    font-family: var(--font1);
+}
+
+.nav-bar {
+    display: flex;
+    background-color: black;
+    gap: 1em;
+    justify-content: flex-start;
+    padding: 1em;
+    align-items: center;
+
+}
+
+.logo {
+    width: 3%;
+    border-radius: 100%;
+}
+
+
+ul {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+ul li:first-child {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.song-container {
+    position: relative;
+    margin: 1em auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    color: white;
+    align-items: center;
+    padding: 2em;
+}
+
+.song-container::before {
+    content: "";
+    position: absolute;
+    background: url(./assets/music-studio.webp);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0.4em 0;
+
+}
+
+
+.song-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    /* border: 2px solid red; */
+    width: 50%;
+    max-width: 500px;
+    margin-top: 1em;
+}
+
+.song-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    background-color: black;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-right: 1em;
+    /* padding: 0.7em; */
+}
+
+.song-list img {
+    border-radius: 100%;
+    width: 21%;
+    max-width: 50px;
+}
+
+.time-stamp {
+    font-family: none;
+    display: flex;
+    gap: 1em;
+}
+
+
+
+.playback {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    margin: 0.3em auto;
+}
+
+.playback-features {
+    display: flex;
+    font-size: 2rem;
+    /* flex-direction: column-reverse; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 0.5em;
+    /* border: 2px solid red; */
+    width: 90%;
+}
+
+.song-name {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    /* border: 2px solid goldenrod; */
+}
+
+.song-name img {
+    width: 30%;
+    opacity: 0;
+    transition:  opacity 1s ease-in;
+}
+
+.song-name p {
+    font-size: 1.3rem;
+}
+
+.playback-control {
+    display: flex;
+    gap: 1em;
+    font-size: 1.5rem;
+    margin-top: 0.3em;
+    justify-self: center;
+    /* align-self: center; */
+    /* margin: 0 auto; */
+    /* border: 2px solid white; */
+    margin-right: auto;
+    width: 55%;
+}
+
+.masterTime{
+    font-size: 1.4rem;
+}
+
+
+@media (min-width:250px) {
+    html {
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .song-container {
+        width: 90%;
+    }
+
+    .song-lists {
+        width: 100%;
+    }
+
+    .song-list {
+        width: 100%;
+        padding: 0.1em 0.3em;
+        padding-right: 0.7em;
+    }
+
+    .song-list img {
+        width: 50%;
+    }
+}
+
+@media (min-width:400px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1500px) {
+    html {
+        font-size: 16px;
+    }
+}
+
